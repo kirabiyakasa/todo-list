@@ -179,8 +179,11 @@ const todoModule = (() => {
         let todoId = button.dataset.checkboxId;
         todoId = parseInt(todoId);
 
-        if (actionType === 'delete') {
-          project.object.deleteTodo(todoId - i)
+        if (actionType === 'delete' ) {
+          if (confirm('Delete these Todos?') === true) {
+            console.log('why')
+            project.object.deleteTodo(todoId - i)
+          }
         } else if (actionType === 'complete') {
           project.object.markComplete(todoId)
         }

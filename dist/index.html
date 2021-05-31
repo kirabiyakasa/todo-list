@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div id="content">
+      <div id="title-tab-container"></div>
+      <div id="project-container">
+        <div id="project" style="display: block"></div>
+        <section id="project-form-wrapper">
+          <div id="create-project" style="display: none">
+            <div class="project-form-fields">
+              <label for="project-title-field">Title: </label>
+              <input type="text" id="project-title-field">
+            </div>
+            <div class="project-form-fields">
+              <label for="project-description-field">Description: </label>
+              <textarea id="project-description-field" cols="32" rows="6">
+              </textarea>
+            </div>
+            <div class="project-form-fields">
+              <label for="project-due-date-field">Due Date: </label>
+              <input type="text" id="project-due-date-field">
+            </div>
+          </div>
+        </section>
+        <div id="bottom-project-bar"></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
